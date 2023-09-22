@@ -235,6 +235,8 @@ app.post('/login', (req, res) => {
   const expectedPassword = process.env.REACT_APP_PASSWORD;
 
   if (username === expectedUsername && password === expectedPassword) {
+    console.log(expectedUsername);
+    console.log(expectedPassword);
     res.json({ success: true, message: 'Login successful' });
   } else {
     res.json({ success: false, message: 'Invalid credentials' });
