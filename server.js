@@ -24,7 +24,7 @@ const apiUrl = `https://${shopifyStore}/admin/api/2023-04/themes/${themeId}/asse
 const reviewUrl = `https://${shopifyStore}/admin/api/2023-04/themes/${themeId}/assets.json`;
 const productApiUrl = `https://${shopifyStore}/admin/api/2021-10/products/`;
 const sgMail = require('@sendgrid/mail');
-const orderApiEndpoint = `https://balloontown.com.au/cdn/shop/t/2/assets/reviews.json?${Date.now()}`;
+const orderApiEndpoint = `https://floating-fun-au.myshopify.com/cdn/shop/t/2/assets/reviews.json?${Date.now()}`;
 const productApiEndpoint = `https://${shopifyStore}/admin/api/2021-10/products/`;
  const headers = {
            'X-Shopify-Access-Token': shopifyToken,
